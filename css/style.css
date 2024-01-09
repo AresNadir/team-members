@@ -1,0 +1,135 @@
+.multiwave-team-members_container {
+  font-family: 'Dalton Maag - Aktiv Grotesk',Helvetica,Arial,Lucida,sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.multiwave-team-member {
+  display: flex;
+  flex: 1 0 22%;
+  margin: 50px 20px 50px 10px;
+  max-width: 20%;
+  min-width: 20%;
+  flex-direction: column; 
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content .modal-texts {
+  font-size: 1.9em;
+  line-height:1.5em;
+  max-height: 50vh;
+}
+
+.modal-content {
+  font-family: 'Dalton Maag - Aktiv Grotesk',Helvetica,Arial,Lucida,sans-serif;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  width:55%;
+  max-height: 65%;
+  border-radius: 20px;
+  border:15px solid #fff;
+  overflow: scroll;
+}
+
+.modal-content .modal-texts *{
+  font-family: 'Dalton Maag - Aktiv Grotesk',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.modal-content .modal-texts h4 {  
+  font-size:1.5em;
+}
+
+.modal-content .modal-texts h5 {
+  font-size:1.1em;
+}
+
+.modal-close_btn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close_btn img {
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+
+.multiwave_team_container {
+  padding:6% 0;
+}
+
+.team_section_title {
+  font-family: 'Dalton Maag - Aktiv Grotesk',Helvetica,Arial,Lucida,sans-serif;
+  font-size:3em;
+  padding:0% 0% 4% 4.2%;
+}
+
+.team_content_container {
+  padding:0% 0% 0% 7.8%;
+}
+
+.mw_board_team {
+  background:#f9f9f9;
+}
+
+.mw_scientific_team {
+  background:#f0f0f0;
+}
+
+
+
+
+.multiwave-team-member .member-image {
+  padding-bottom:40px;
+}
+
+.multiwave-team-member h3 {
+  font-family: 'Dalton Maag - Aktiv Grotesk',Helvetica,Arial,Lucida,sans-serif;
+  font-size:1.45em;
+  font-weight: 700;
+}
+
+.multiwave-team-member .member-position {
+  font-size:1.44em; 
+}
+
+.multiwave-team-member .member-description {
+  width:75%;
+  font-size:1em;
+}
+
+.multiwave-team-member .read-more-link {
+  padding-top:20px;
+  font-size:1.1em;
+  width:95px;
+  border-bottom:2px solid #000;
+  cursor: pointer;
+}
+
+.multiwave-team-member .read-more-link:after {
+  content: '+';
+  padding-left:9%;
+}
+    
+
