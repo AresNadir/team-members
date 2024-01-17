@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Team members
-Description: Add team members plugin use the shortcode [team_members category="category-slug"] to display members by category
+Plugin Name: Multiwave Team members
+Description: Team members plugin [team_members category="category-slug"]
 Version: 1.0
-Author: Ares Ioakimidis
+Author: Eproductions
 */
 
 
@@ -93,17 +93,17 @@ function display_team_members($atts) {
           $output .='<a class="read-more-link" data-modal-id="myModal'.$random_id.'">Read More</a>
                       <div id="myModal'.$random_id.'" class="modal">
                         <div class="modal-content">
+                          <div class="modal-close_btn" id="modal_close_btn_container">
+                            <img class="close" src="/wp-content/uploads/2024/01/modal-close.png">
+                          </div>
                           <div class="modal-texts">
-                            <div class="modal-close_btn" id="modal_close_btn_container">
-                              <img class="close" src="ADD IMAGE URL">
-                            </div>
                             <div>
                               <h4>' . get_the_title() . '</h4>
                             </div>
                             <div>
                               <h5>'.$position.'</h5>
                             </div>
-                            <div>
+                            <div class="modal-full-description">
                               <p>'.$post_content.'</p>
                             </div>
                           </div>

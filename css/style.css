@@ -2,7 +2,6 @@
   font-family: 'Dalton Maag - Aktiv Grotesk',Helvetica,Arial,Lucida,sans-serif;
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .multiwave-team-member {
@@ -30,20 +29,22 @@
   font-size: 1.9em;
   line-height:1.5em;
   max-height: 50vh;
+  overflow: scroll;
 }
 
 .modal-content {
   font-family: 'Dalton Maag - Aktiv Grotesk',Helvetica,Arial,Lucida,sans-serif;
   background-color: #fefefe;
-  margin: 15% auto;
+  margin:25vh 0 10vh 0;
   padding: 20px;
+  left:20%;
+  position:absolute;
   animation-name: animatetop;
-  animation-duration: 0.4s;
+  animation-duration: 0.8s;
   width:55%;
   max-height: 65%;
   border-radius: 20px;
   border:15px solid #fff;
-  overflow: scroll;
 }
 
 .modal-content .modal-texts *{
@@ -69,8 +70,8 @@
 }
 
 @keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+  from {top: -30px; opacity: 0}
+  to {top:  0px; opacity: 1}
 }
 
 
@@ -81,7 +82,7 @@
 
 .team_section_title {
   font-family: 'Dalton Maag - Aktiv Grotesk',Helvetica,Arial,Lucida,sans-serif;
-  font-size:3em;
+  font-size:40px;
   padding:0% 0% 4% 4.2%;
 }
 
@@ -96,9 +97,6 @@
 .mw_scientific_team {
   background:#f0f0f0;
 }
-
-
-
 
 .multiwave-team-member .member-image {
   padding-bottom:40px;
@@ -116,12 +114,12 @@
 
 .multiwave-team-member .member-description {
   width:75%;
-  font-size:1em;
+  font-size:14px;
 }
 
 .multiwave-team-member .read-more-link {
   padding-top:20px;
-  font-size:1.1em;
+  font-size:14px;
   width:95px;
   border-bottom:2px solid #000;
   cursor: pointer;
@@ -131,5 +129,50 @@
   content: '+';
   padding-left:9%;
 }
-    
 
+.modal-full-description {
+  font-size:32px;
+  padding:0 20px 0 0;
+}
+
+@media(max-width:950px) {
+  .multiwave-team-members_container {
+    justify-content:center;
+  }
+  .multiwave-team-member .member-image {
+    padding-bottom:15px;
+  }
+  .multiwave-team-member h3,
+  .multiwave-team-member .member-position {
+    font-size:20px;
+  }
+  .multiwave-team-member .member-position {
+    min-height:50px;
+  }
+  .team_content_container {
+    padding:0% 0% 0% 0%;
+  }
+  .multiwave-team-member {
+    min-width: 100%;
+    padding-left: 50px;
+    margin: 50px 20px 50px 0px;
+  }
+  .modal-content {
+    margin:40% 20px;
+    left:0%;
+    width:90%;
+  }
+  .modal-content .modal-texts h4 {  
+    font-size:1em;
+  }
+  .modal-content .modal-texts h5 {
+    font-size:0.6em;
+  }
+  .modal-full-description {
+    font-size:0.7em;
+    line-height:2em;   
+  }
+  .team_section_title {
+    padding-top:20px;
+  }
+}
